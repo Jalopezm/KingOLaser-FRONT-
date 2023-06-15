@@ -9,7 +9,7 @@ RUN yarn install && yarn build && yarn generate
 
 # nginx state for serving content
 FROM nginx:alpine
-# Set working directory to nginx asset directory
+# Set working directory to nginx asset directory 
 WORKDIR /usr/share/nginx/html
 # Remove default nginx static assets
 RUN rm -rf ./*
