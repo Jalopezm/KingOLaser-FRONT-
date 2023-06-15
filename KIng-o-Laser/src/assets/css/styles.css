@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primario: #1E40AF;
+    --color-secundario: #380036;
+    --gradiente: linear-gradient(90deg, var(--color-primario) 0%, var(--color-secundario) 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: var(--gradiente);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+button.signup, button.login {
+    background-color: var(--color-primario);
+    color: white;
+    font-weight: bold;
+}
