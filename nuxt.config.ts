@@ -7,9 +7,7 @@ export default defineNuxtConfig({
       title: 'Telegame'
     }
   },
-  target:"static",
   srcDir:"./src",
-  buildDir: 'dist',
   ssr:false,
   modules: [
     "@nuxtjs/tailwindcss",
